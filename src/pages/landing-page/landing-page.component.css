@@ -1,0 +1,321 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.liberika {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 47px;
+  z-index: 2;
+  color: rgb(21, 21, 136);
+  position: relative; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box
+}
+
+.dlib {
+  padding-top: 350px;
+  padding-left: 250px;
+  position: relative; /* Ensure the dlib class is positioned */
+}
+
+.moto {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 47px;
+  z-index: 2;
+  position: relative;
+  /* color: #FFFFFF; */
+}
+
+.dmoto {
+  width: 1500px;
+  padding-top: 40px;
+  padding-left: 250px;
+  position: relative; 
+  z-index: 20;
+  color: rgb(21, 21, 136);
+}
+
+
+.dkanan {
+  padding-top: 40px;
+  margin-left: 0px;
+  position: relative; 
+  z-index: 20;
+}
+
+.background-container {
+  overflow-y: auto;
+  left: 620px;
+  position: relative;
+  width: 80%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+
+button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  z-index: 3; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgb(255, 254, 254) 0%, transparent 10%);
+  z-index: 1;
+  opacity: 100%;
+}
+
+.overlayatas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(255, 254, 254) 10%, transparent 100%);
+  z-index: 1;
+  opacity: 100%;
+}
+
+.custom-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-button::after {
+  position: absolute;
+  right: 10px;
+}
+
+.dkanan {
+  padding-top: 40px;
+  margin-left: 0px;
+  position: relative; 
+  z-index: 20;
+}
+
+.dkiri {
+  /* padding-top: 40px;
+  padding-left: 20px; */
+  margin-left: 40px;
+  margin-top: 0px;
+  position: relative; 
+  z-index: 25;
+  background-color: black;
+  width: 50px;
+  height: 50px; /* Set the height to match the width for a perfect circle */
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.dkanan {
+  padding-top: 0px;
+  /* padding-left: 20px;  */
+  margin-left: 1880px;
+  width: 10px;
+  position: relative; 
+  z-index: 25;
+}
+
+.bkanan{
+  background-color: black;
+  width: 50px;
+  height: 50px; /* Set the height to match the width for a perfect circle */
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.bkanan i {
+  color: white;
+}
+
+.dkiri i {
+  color: white;
+}
+
+.circle1 {
+  margin: 0px 10px 0px 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; 
+  z-index: 5;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+.circle2 {
+  margin: 0px 10px 0px 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; 
+  z-index: 5;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+.circle3 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; 
+  z-index: 5;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+.circle-collection{
+  display: flex;
+  flex-direction: row;
+  margin: -50px 0px 0px 250px;
+}
+
+.our-service{
+  position: relative;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  z-index: 40;
+  margin: 200px 0px 0px 900px;
+}
+
+.scroll{
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+@media only screen and (max-width: 600px) {
+
+  .circle-collection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: -440px;
+  }
+  
+  .dlib {
+    padding-top: 180px;
+    padding-left: 80px;
+    position: relative;
+    max-width: 50px; 
+  }
+
+  .moto {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    max-width: 300px;
+    line-height: 47px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    /* color: #FFFFFF; */
+  }
+
+  .dmoto {
+    padding-top: 40px;
+    padding-left: 50px;
+    position: relative; 
+    z-index: 20;
+    color: rgb(0, 0, 0);
+  }
+
+  .liberika {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 47px;
+    z-index: 2;
+    color: rgb(5, 5, 5);
+    position: relative; 
+  }
+
+  .dkanan {
+    padding-top: 0px;
+    /* padding-left: 20px;  */
+    margin-left: 350px;
+    width: 10px;
+    position: relative; 
+    z-index: 25;
+  }
+  
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+
+  .circle-collection{
+    display: flex;
+    flex-direction: row;
+    margin-left: 370px;
+  }
+
+  .dlib {
+    padding-top: 240px;
+    padding-left: 220px;
+    position: relative;
+    max-width: 50px; 
+  }
+
+  .moto {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    max-width: 300px;
+    line-height: 27px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    /* color: #FFFFFF; */
+  }
+
+  .dmoto {
+    padding-top: 40px;
+    padding-left: 260px;
+    position: relative; 
+    z-index: 20;
+    color: rgb(0, 0, 0);
+  }
+
+  .liberika {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 80px;
+    z-index: 2;
+    color: rgb(5, 5, 5);
+    position: relative; 
+  }
+
+  .dkanan {
+    padding-top: 0px;
+    /* padding-left: 20px;  */
+    margin-left: 780px;
+    width: 10px;
+    position: relative; 
+    z-index: 25;
+  }
+}
+
+
+
+
+
+
+
+

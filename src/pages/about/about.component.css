@@ -1,0 +1,83 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  overflow-y: auto;
+  position: relative;
+  height: 100vh;
+  width: 1920px;
+  left: 310px;
+  top: 0px;
+  border-radius: 0;
+  max-width: 1920px;
+  background-size: cover;
+  background-position: center;
+
+  background-image: url('../../assets/cheese.png'); 
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat; /* Adjust as needed */
+}
+
+
+  .about-explanation {
+    padding: 40px 40px 40px 40px;
+    justify-content: center;
+    width: 800px; 
+    height: 400px;
+    margin: 50px 50px 200px 530px;
+    border-radius: 10px; 
+    background-color: rgb(20, 32, 145); 
+    opacity: 60%;
+    position: relative;
+  }
+
+  .about-cont{
+    padding: 60px 0px 0px 0px;
+  }
+
+  .about{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 47px;
+    z-index: 2;
+    color: rgb(6, 39, 128);
+    position: relative; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box
+  }
+  .explanation-font{
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 47px;
+    z-index: 2;
+    color: whitesmoke;
+    position: relative; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  }
+
+  .about-box{
+    position: relative;
+    justify-content: center;
+    margin: 200px 0px 0px -180px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .riset1{
+    position: relative;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    z-index: 1;
+    /* padding: 0px 0px 0px -100px; */
+    /* margin: 200px 0px 0px 900px; */
+  }
+
+  

@@ -1,0 +1,18 @@
+.container {
+    padding-left: 60px;
+    /* backgroundImage: `url(${back2})`, */
+    /* imageOpacity: 0.2, */
+    /* height: 1022px;
+    width: 2000px; */
+    /* width: 1925px; */
+    width: 100%;
+    
+    left: 0;
+    /* top: 0;
+    overflow: hidden;
+    display: flex; */
+    /* backgroundColor: ""; */
+    /* background-color: aquamarine; */
+    /* background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(255, 255, 255, 0.5)); */
+
+}

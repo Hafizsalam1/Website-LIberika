@@ -1,0 +1,40 @@
+<section id="home">
+<body >
+    <div class="background-container" [style.backgroundImage]="'url(../../assets/' + images[currentImageIndex] + ')'">
+    <div class="overlay"></div>
+    <div class="overlayatas"></div>
+      <div class="dlib">
+      <p class="liberika">LIBERIKA ACADEMY</p>
+    </div>
+    <div class="dmoto">
+      <p class="moto">UNLEASHING POTENTIAL FOR GROWING ACHIEVEMENT</p>
+    </div>
+    <div class="dkanan">
+      <button (click)="nextImage()" class="bkanan">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+    <div>
+    <button (click)="previousImage()" class="dkiri">
+      <i class="fas fa-chevron-left"></i>
+   </button>
+    </div>
+    <br/>
+    <br/>
+    <div class="circle-collection">
+      <div class="circle1" (click)="goToFirst()"></div>
+      <div class="circle2" (click)="goToSecond()"></div>
+      <div class="circle3" (click)="goToThird()"></div>
+    </div>
+    <div class="our-service">
+      <ng-lottie
+        [options]="lottieOptions" 
+         class="scroll">
+      </ng-lottie>
+    </div>
+
+    </div>
+    
+</body>
+</section>
+  
