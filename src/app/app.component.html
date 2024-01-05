@@ -10,17 +10,17 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <div>
     <app-header></app-header>
-    <!-- <router-outlet></router-outlet> -->
-    <!-- <app-about></app-about> -->
-
-    <!-- <section id="home"> -->
-     <app-landing-page></app-landing-page>
-    <!-- </section> -->
-
-    <!-- <section id="about"> -->
-      <app-about></app-about>
-    <!-- </section> -->
-    
+    <div class="wa">
+      <a href="https://wa.me/6287774118227" >
+        <ng-lottie
+        [options]="lottieOptions" class="animation-wa" (mouseenter)="onHoverArrow()" (mouseleave)="offHoverArrow()">
+      </ng-lottie>
+      </a>
+    </div>
+    <!-- <div class="circle"></div> -->
+    <!-- <div class="circle2"></div> -->
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
 </div>
   
   

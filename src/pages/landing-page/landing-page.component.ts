@@ -13,10 +13,11 @@ export class LandingPageComponent implements OnInit {
   currentImageIndex: number = 0;
   private subscription: Subscription = undefined as any;
 
+
   images: string[] = [
-    'coverliberika1.jpeg',
+    'coverliberika1.jpg',
     'liberika2.jpeg',
-    'liberika3.jpeg'
+    'liberika3.jpg'
   ];
 
 
@@ -98,6 +99,31 @@ export class LandingPageComponent implements OnInit {
   lottieOptions: AnimationOptions = {
     path: '../../assets/scroll.json', 
   };
+
+  onHoverArrow(direction: string): void{
+    if(direction == "right"){
+      const bkanan = document.querySelector('.bkanan') as HTMLElement;
+      bkanan.style.width = "60px";
+      bkanan.style.height = "60px";
+    } else if(direction == "left"){
+      const dkiri = document.querySelector('.dkiri') as HTMLElement;
+      dkiri.style.width = "60px";
+      dkiri.style.height = "60px";
+    }
+  }
+
+  offHoverArrow(direction: string){
+    if(direction == "right"){
+      const bkanan = document.querySelector('.bkanan') as HTMLElement;
+      bkanan.style.width = "50px";
+      bkanan.style.height = "50px";
+    } else if(direction == "left"){
+      const dkiri = document.querySelector('.dkiri') as HTMLElement;
+      dkiri.style.width = "50px";
+      dkiri.style.height = "50px";
+    }
+    
+  }
 
 
 

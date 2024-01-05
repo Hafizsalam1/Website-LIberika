@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "website-liberika:build:production"
+              "buildTarget": "website-liberika:build:production"
             },
             "development": {
-              "browserTarget": "website-liberika:build:development"
+              "buildTarget": "website-liberika:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "website-liberika:build"
+            "buildTarget": "website-liberika:build"
           }
         },
         "test": {

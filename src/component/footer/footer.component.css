@@ -1,0 +1,83 @@
+.container {
+    overflow-y: hidden;
+    height: 150px;
+    width: 1920px;
+    border-radius: 0;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: linear-gradient(rgba(150, 150, 150,0.5),rgba(255, 255, 255,0.5)); */
+    z-index: 1;
+    justify-content: space-between;
+    align-items: right; /* Note: 'right' is not a valid value for align-items, consider using 'flex-end' */
+    padding: 0 70px;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 620px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    /* opacity: 80%; */
+  }
+  .fleft{
+    padding-top: 20px;
+    height: 100px;
+    width: 960px;
+    padding-left: 200px;
+    /* background-color: aqua; */
+  }
+
+  .fright{
+    padding-top: 20px;
+    padding-right: 200px;
+    /* background-color: black; */
+  }
+
+  .logo {
+    width: 50px;
+    height: auto;
+  }
+
+  .logo-insta {
+    width: 65px;
+    margin-bottom: 10px;
+    height: auto;
+  }
+
+  .logo-container{
+    margin-top: -45px;
+    height: 60px;
+    padding-top: -10px;
+  }
+
+  .footer-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 47px;
+    z-index: 29;
+    position: relative;
+    color: rgb(21, 21, 136) !important;
+  }
+  .title-container{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .address-container{
+    margin-top: -35px;
+  }
+
+  .footer-address {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 47px;
+    z-index: 29;
+    position: relative;
+    color: rgb(21, 21, 136) !important;
+  }
+
+  

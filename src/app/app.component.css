@@ -16,3 +16,31 @@
     /* background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(255, 255, 255, 0.5)); */
 
 }
+
+.wa{
+    margin-top: 200px;
+    position: fixed;
+    /* background-color: blue; */
+    width: 100%;
+    height: 100px;
+    z-index: 300;
+    margin-left: 650px;
+    padding-left: 1750px;
+
+}
+
+.a{
+overflow-y: hidden;
+}
+
+
+.animation-wa {
+    width: 10px; 
+    height: auto;
+    cursor: pointer; 
+  }
+
+
+  
+  
+

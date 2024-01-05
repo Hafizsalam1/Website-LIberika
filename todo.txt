@@ -1,0 +1,3 @@
+Fixed routing after detailed program
+build deatiled program page
+Buat page news, sesuain layout program and program detail

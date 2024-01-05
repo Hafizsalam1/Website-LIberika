@@ -50,17 +50,31 @@ header {
     display: flex;
     align-items: center;
     flex-direction: row;
+    width: 700px;
   }
   
   .nav-link {
     margin-right: 15px; 
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 47px;
     z-index: 29;
     position: relative;
-    color: black !important;
+    color: rgb(21, 21, 136) !important;
+    cursor: pointer;
+  }
+
+  .hover-effect {
+    border-bottom: 2px solid; 
+    padding-bottom: 1px; 
+    display: inline;
+  }
+
+  .header-container{
+    display: flex;
+    flex-direction: row;
+
   }
 
   @media screen and (min-width: 901px) {

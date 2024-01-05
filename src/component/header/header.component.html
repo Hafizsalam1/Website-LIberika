@@ -1,19 +1,20 @@
 <!-- header.component.html -->
 <header class="navbar navbar-dark bg-dark sticky-top top-nav">
+  <div class="header-container">
     <a class="navbar-brand">
       <button class="menu-btn">&#9776;</button>
       <img src="../../assets/rmovelogo.png" alt="Logo Liberika" style="width: 70px; height: auto; margin-left: 25px;" routerLink="/home">
-      </a>
+    </a>
     <!-- <nav class="navbar-nav">
       <a class="nav-link" (click)="navigateToHome()">Home</a>
       <a class="nav-link" (click)="toAbout()">About</a>
       <a class="nav-link" routerLink="/contact">Contact</a>
     </nav> -->
     <nav class="navbar-nav">
-      <a class="nav-link" routerLink="/home">Home</a>
-      <a class="nav-link" (click)="navigateToSection('about')">About</a>
-      <a class="nav-link" routerLink="/contact">Contact</a>
-      <!-- <a class="nav-link" routerLink="/home#section2">Section 2</a>
-      <a class="nav-link" routerLink="/home#section3">Section 3</a> -->
-  </nav>
-  </header>
+      <a class="nav-link" [class.hover-effect]="isHoveredHome" (click)="scrollToSection('home')" (mouseenter)="onMouseHover('home')" (mouseleave)="onMouseOffHover('home')">Home</a>
+      <a class="nav-link" [class.hover-effect]="isHoveredAbout" (click)="scrollToSection('about')" (mouseenter)="onMouseHover('about')" (mouseleave)="onMouseOffHover('about')">About</a>
+      <a class="nav-link" [class.hover-effect]="isHoveredProgram" (click)="scrollToSection('program')" (mouseenter)="onMouseHover('program')" (mouseleave)="onMouseOffHover('program')">Programs</a>
+      <a class="nav-link" [class.hover-effect]="isHoveredNews" (click)="scrollToSection('news')" (mouseenter)="onMouseHover('news')" (mouseleave)="onMouseOffHover('news')">News</a>
+    </nav>
+  </div>
+</header>
