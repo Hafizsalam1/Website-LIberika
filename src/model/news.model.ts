@@ -1,7 +1,8 @@
 export interface News{
-    newsCode?: string;
+    newsCode: string;
     title?: string;
     picture?: string;
+    body?: string;
 
 
 }

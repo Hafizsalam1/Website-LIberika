@@ -3,11 +3,10 @@
         <div class="title-container">
             <h1 class="title">News</h1>
         </div>
-        <div class="body-container">
-            <div  class="news-container" (mouseenter)="onHover()" (mouseleave)="offHover()" (click)="navigateToNewsDetail('01')" >
-                <p class="news-font">KONTINGEN LIBERIKA ACADEMY SAMBET 3 MEDALI EMAS DAN 2 MEDALI PERAK DI AJANG LOMBA INDONESIA INTERNATIONAL APPLIED SCIENCE PROJECT OLYMPIAD
-                </p>
-                <img src="../../assets/coverliberika1.jpg" alt="Logo Liberika" class="photo">
+        <div class="body-container" >
+            <div *ngFor="let new of news" class="news-container" id="news-{{new.newsCode}}" (mouseenter)="onHover(new)" (mouseleave)="offHover(new)" (click)="navigateToNewsDetail(new.newsCode)" >
+                <p class="news-font">{{new.title}}</p>
+                <img src={{new.picture}} alt="Logo Liberika" class="photo">
                 <p class="news-font"></p>
             </div>
         </div>

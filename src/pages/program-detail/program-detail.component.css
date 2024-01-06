@@ -28,7 +28,7 @@ body {
   .title-box{
     position: relative;
     justify-content: center;
-    margin: 200px 0px 0px -180px;
+    margin: 200px 0px 0px -60px;
     display: flex;
     flex-direction: row;
   }

@@ -1,10 +1,11 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 import { interval, Subscription } from 'rxjs';
 import { AnimationItem } from 'lottie-web';
 import { AnimationOptions, LottieComponent } from 'ngx-lottie';
 import { NavigationExtras, Router } from '@angular/router';
 
 import * as lottie from 'lottie-web';
+import { DOCUMENT } from '@angular/common';
 
 
 @Component({
@@ -14,7 +15,8 @@ import * as lottie from 'lottie-web';
 })
 export class ProgramsComponent {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, @Inject(DOCUMENT) private document: Document) {
+  }
 
   @ViewChild('lottie') lottie!: LottieComponent;
 
@@ -164,7 +166,22 @@ export class ProgramsComponent {
   }
 
   navigateToProgramDetail(programName: string): void {
-    this.router.navigate(['/program-detail', programName]);
+    this.router.navigate(['/program-detail', programName]).then(() => {
+      const scrollElement = this.document.documentElement || this.document.body;
+      if (scrollElement) {
+        const scrollToTop = () => {
+          scrollElement.scrollTop = 0;
+        };
+  
+        if ('scrollBehavior' in document.documentElement.style && navigator.userAgent.indexOf("Firefox") === -1) {
+          // Use smooth scrolling if supported and not Firefox
+          scrollElement.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          // Fallback for browsers that do not support smooth scrolling or Firefox
+          requestAnimationFrame(scrollToTop);
+        }
+      }
+    });
   }
   
   

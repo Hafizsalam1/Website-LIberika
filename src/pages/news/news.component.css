@@ -44,7 +44,7 @@ body {
     justify-content: center;
     width: 400px; 
     height: 600px;
-    margin: 50px 50px 200px 530px;
+    margin: 50px 50px 200px 200px;
     border-radius: 10px; 
     background-color: rgb(6, 39, 128);
     opacity: 70%;
@@ -71,6 +71,7 @@ body {
     align-items: center;
     padding-left: 30px;
     margin-left: 190px;
+    /* background-color: black; */
   }
 
   .photo{
