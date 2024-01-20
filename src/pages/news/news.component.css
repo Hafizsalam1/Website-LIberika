@@ -5,8 +5,8 @@ body {
   
   .container {
     position: relative;
-    height: 100vh;
-    width: 1920px;
+    height: 100%;
+    width: 100%;
     left: 310px;
     top: 0px;
     border-radius: 0;
@@ -37,14 +37,14 @@ body {
   }
 
   .news-container {
-    padding: 15px 40px 40px 40px;
+    padding: 40px 30px 40px 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 400px; 
-    height: 600px;
-    margin: 50px 50px 200px 200px;
+    width: 350px; 
+    height: 550px;
+    margin: 50px 10px 200px 50px;
     border-radius: 10px; 
     background-color: rgb(6, 39, 128);
     opacity: 70%;
@@ -69,8 +69,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 30px;
-    margin-left: 190px;
+    padding-left: 10px;
+    margin-left: 27%;
     /* background-color: black; */
   }
 

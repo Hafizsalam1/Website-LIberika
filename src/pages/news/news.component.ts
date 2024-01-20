@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { News } from 'src/model/news.model';
 
@@ -9,7 +10,7 @@ import { News } from 'src/model/news.model';
 })
 export class NewsComponent {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, @Inject(DOCUMENT) private document: Document) {}
 
   news: News[] = [{
     newsCode: '01',
@@ -37,7 +38,39 @@ export class NewsComponent {
   }
 
   navigateToNewsDetail(newsCode: string): void {
-    this.router.navigate(['/news-detail'], { queryParams: { newsCode: newsCode } });
+    if(newsCode == '02'){
+      this.router.navigate(['/news-detail/kaleidoskop']).then(() => {
+        const scrollElement = this.document.documentElement || this.document.body;
+        if (scrollElement) {
+          const scrollToTop = () => {
+            scrollElement.scrollTop = 0;
+          };
+    
+          if ('scrollBehavior' in document.documentElement.style && navigator.userAgent.indexOf("Firefox") === -1) {
+            scrollElement.scrollTo({ top: 0, behavior: 'smooth' });
+          } else {
+            requestAnimationFrame(scrollToTop);
+          }
+        }
+      });
+    }else{
+      this.router.navigate(['/news-detail'],{ queryParams: { newsCode: newsCode } }).then(() => {
+        const scrollElement = this.document.documentElement || this.document.body;
+        if (scrollElement) {
+          const scrollToTop = () => {
+            scrollElement.scrollTop = 0;
+          };
+    
+          if ('scrollBehavior' in document.documentElement.style && navigator.userAgent.indexOf("Firefox") === -1) {
+            scrollElement.scrollTo({ top: 0, behavior: 'smooth' });
+          } else {
+            requestAnimationFrame(scrollToTop);
+          }
+        }
+      });
+    }
+
+
   }
 
 

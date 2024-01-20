@@ -174,10 +174,8 @@ export class ProgramsComponent {
         };
   
         if ('scrollBehavior' in document.documentElement.style && navigator.userAgent.indexOf("Firefox") === -1) {
-          // Use smooth scrolling if supported and not Firefox
           scrollElement.scrollTo({ top: 0, behavior: 'smooth' });
         } else {
-          // Fallback for browsers that do not support smooth scrolling or Firefox
           requestAnimationFrame(scrollToTop);
         }
       }

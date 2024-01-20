@@ -6,16 +6,16 @@
     max-width: 1920px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     /* background: linear-gradient(rgba(150, 150, 150,0.5),rgba(255, 255, 255,0.5)); */
     z-index: 1;
-    justify-content: space-between;
-    align-items: right; /* Note: 'right' is not a valid value for align-items, consider using 'flex-end' */
-    padding: 0 70px;
+    justify-content: center;
+    align-items: center; 
+    /* padding: 0 70px; */
     position: relative;
     box-sizing: border-box;
-    margin-left: 620px;
+    /* margin-left: 420px; */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    left: 300px;
     /* opacity: 80%; */
   }
   .fleft{

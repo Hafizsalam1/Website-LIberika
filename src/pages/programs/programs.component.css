@@ -5,8 +5,10 @@ body {
   
   .container {
     position: relative;
-    height: 100vh;
-    width: 1920px;
+    /* height: 1080px;
+    width: 1920px; */
+    width: 100%;
+    height: 100%;
     left: 310px;
     top: 0px;
     border-radius: 0;
