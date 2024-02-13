@@ -6,6 +6,7 @@ import { NavigationExtras, Router } from '@angular/router';
 
 import * as lottie from 'lottie-web';
 import { DOCUMENT } from '@angular/common';
+import { Program } from 'src/model/program.model';
 
 
 @Component({
@@ -20,7 +21,7 @@ export class ProgramsComponent {
 
   @ViewChild('lottie') lottie!: LottieComponent;
 
-  lottieResearch: AnimationOptions = {
+  lottieReserach: AnimationOptions = {
     path: '../../assets/research.json', 
     renderer: 'svg',
     loop: true,
@@ -54,6 +55,52 @@ export class ProgramsComponent {
     loop: true,
     autoplay: false,
   };
+
+
+  programs: Program[] =[
+    {
+      programCode:'research',
+      title: "Sains dan Riset",
+      description:"Science and research merupakan program untuk mendukung pengembangan kreativitas peserta didik dibidang science dan research. Materi yang diajarkan meliputi pengembangan robotik, pengembangan energi baru terbarukan, pengembangan biomedis, dan pengembangan teknologi. ",
+      price:200000,
+      animation: this.lottieReserach
+    },
+  
+    {
+      programCode:'math',
+      title: "Matematika",
+      description:"Matematika merupakan program untuk meningkatkan kemampuan dalam berfikir dan mengerjakan matematika.",
+      price:200000,
+      animation: this.lottieMath
+    },
+  
+    {
+      programCode:'box',
+      title: "Taekwondo",
+      description:"Taekwondo merupakan kursus bela diri untuk mendukung siswa dalam menjaga diri dari orang jahat. Materi yang akan diajarkan meliputi kekuatan fisik, kelenturan dan materi beladiri.  ",
+      price:200000,
+      animation: this.lottieBox
+    },
+  
+    {
+      programCode:'language',
+      title: "Bahasa Inggris",
+      description:"Bahasa Inggris merupakan program peningkatan kemampuan bwrbahasa Inggris. Materi yang akan diajarkan meliputi Speaking conversation, grammar dan speaking presentasi.",
+      price:200000,
+      animation: this.lottieLanguage
+    },
+  
+    {
+      programCode:'web',
+      title: "Web",
+      description:"Website development merupakan program untuk mengembangkan siswa didik kami dalam bidang IoT sehingga memudahkan untuk mempersiapkan diri menuju social Society.",
+      price:200000,
+      animation: this.lottieWeb
+    }
+  ] 
+
+
+
   private researchAnimation: any;
   private boxAnimation: any;
   private languageAnimation: any;
@@ -90,6 +137,8 @@ export class ProgramsComponent {
   }
 
   onMouseEnter(animationTitle: string) {
+    const nc = document.querySelector(`#program-${animationTitle}`) as HTMLElement;
+    nc.style.backgroundColor = "blueviolet";
     switch(animationTitle){
       case "research":
         if (this.researchAnimation) {
@@ -128,6 +177,8 @@ export class ProgramsComponent {
   }
 
   onMouseLeave(animationTitle: string) {
+    const nc = document.querySelector(`#program-${animationTitle}`) as HTMLElement;
+    nc.style.backgroundColor = "rgb(6, 39, 128)"
     switch(animationTitle){
       case "research":
         if (this.researchAnimation) {
@@ -181,7 +232,6 @@ export class ProgramsComponent {
       }
     });
   }
-  
   
 
 }

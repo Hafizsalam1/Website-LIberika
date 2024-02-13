@@ -40,7 +40,7 @@ body {
 }
 
 .title-container{
-  align-items: center;
+  align-items: justify;
   margin-top: 5vh;
 }
 
@@ -54,6 +54,37 @@ body {
   position: relative; 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
   box-sizing: border-box;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+  .title-font{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    z-index: 2;
+    color: rgb(6, 39, 128);
+    position: relative; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px){
+
+  .title-font{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 30px;
+    z-index: 2;
+    color: rgb(6, 39, 128);
+    position: relative; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+  }
+
 }
 
 

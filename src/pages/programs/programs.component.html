@@ -1,37 +1,17 @@
 <section id="program">
+    <body>
     <div class="container">
         <div class="program-box">
-        <div class="program-cont">
-        <p class="program-font"> Programs </p>
+            <p class="program-font"> Programs </p>
         </div>
-        </div>
-
-        <div class="flex-column">
-            <div class="flex-row">
-                <div class="program-detail" [class.program-box-added]="isResearchHovered" (click)="navigateToProgramDetail('research')">
-                    <h2 class="program-title">Kelas Riset</h2>
-                    <ng-lottie #lottie [options]="lottieResearch" (animationCreated)="animationCreated($event,'research')" (mouseenter)="onMouseEnter('research')" (mouseleave)="onMouseLeave('research')"></ng-lottie>
+        
+        <div class="flex-col">
+                <div *ngFor="let program of programs" class="program-detail" id="program-{{program.programCode}}" (mouseenter)="onMouseEnter(program.programCode)" (mouseleave)="onMouseLeave(program.programCode)" (click)="navigateToProgramDetail(program.programCode)" >
+                    <h2 class="program-title">{{program.title}}</h2>
+                    <ng-lottie #lottie [options]="program.animation" (animationCreated)="animationCreated($event,program.programCode)"></ng-lottie>
                 </div>
-                <div class="program-detail"[class.program-box-added]="isBoxHovered" (click)="navigateToProgramDetail('box')">
-                    <h2 class="program-title">Kelas Taekwondo</h2>
-                    <ng-lottie #lottie [options]="lottieBox" (animationCreated)="animationCreated($event, 'box')" (mouseenter)="onMouseEnter('box')" (mouseleave)="onMouseLeave('box')"></ng-lottie>
-                </div>
-                <div class="program-detail" [class.program-box-added]="isMathHovered" (click)="navigateToProgramDetail('math')">
-                    <h2 class="program-title">Kelas Matematika</h2>
-                    <ng-lottie #lottie [options]="lottieMath" (animationCreated)="animationCreated($event, 'math')" (mouseenter)="onMouseEnter('math')" (mouseleave)="onMouseLeave('math')"></ng-lottie>
-                </div>
-            </div>
-            <div class="flex-row">
-                <div class="program-detail" [class.program-box-added]="isLanguageHovered" (click)="navigateToProgramDetail('language')">
-                    <h2 class="program-title">Kelas Bahasa Inggris</h2>
-                    <ng-lottie #lottie [options]="lottieLanguage" (animationCreated)="animationCreated($event, 'language')" (mouseenter)="onMouseEnter('language')" (mouseleave)="onMouseLeave('language')"></ng-lottie>
-                </div>
-                <div class="program-detail" [class.program-box-added]="isWebHovered" (click)="navigateToProgramDetail('web')">
-                    <h2 class="program-title">Kelas Web</h2>
-                    <ng-lottie #lottie [options]="lottieWeb" (animationCreated)="animationCreated($event, 'web')" (mouseenter)="onMouseEnter('web')" (mouseleave)="onMouseLeave('web')"></ng-lottie>
-                </div>
-            </div>
         </div>
     </div>
+</body>
 </section>
 
