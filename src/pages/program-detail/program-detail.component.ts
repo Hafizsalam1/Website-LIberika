@@ -76,6 +76,10 @@ export class ProgramDetailComponent implements OnInit {
       this.choosenProgram = this.language;
     }
   }
+
+ private onMoreInfo(){
+    
+  }
   
 
 
