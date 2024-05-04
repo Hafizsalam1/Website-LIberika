@@ -80,6 +80,10 @@
     color: rgb(21, 21, 136) !important;
   }
 
+  .link-maps{
+    text-decoration: none;
+  }
+
 
   @media only screen and (max-width: 600px){
 
