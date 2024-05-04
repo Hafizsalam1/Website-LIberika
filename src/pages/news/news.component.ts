@@ -54,7 +54,7 @@ export class NewsComponent {
         }
       });
     }else{
-      this.router.navigate(['/news-detail'],{ queryParams: { newsCode: newsCode } }).then(() => {
+      this.router.navigate(['/news-detail/'],{ queryParams: { newsCode: newsCode } }).then(() => {
         const scrollElement = this.document.documentElement || this.document.body;
         if (scrollElement) {
           const scrollToTop = () => {
